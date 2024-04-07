@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kode Mono', monospace;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+body{
+    background: #F4D7D1;
+    /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+    
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7E685A;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #8D7F73;
+}
+
+
+
+
+
+.img1{
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    left: 42%;
+    top: 35%;
+    border: palevioletred;
+    border-style: outset;
+    border-width: 5px;
+}
+/* .img2{
+    opacity: 1;
+    border-radius: 50%;
+    left: 51%;
+    position: absolute;
+    top: 3%;
+} */
+.s1{
+    background-color: #BAB2B5;
+    height: 85%;
+    width: 90%;
+    border: 5px solid #EAE7DC;
+    border-radius: 1%; 
+    margin-left:5%;
+    
+}
+.s1 h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s2{
+    background-color: #D8C3A5;
+    height: 95%;
+    border: 5px solid #EAE7DC;
+    margin-left:5%;
+    width: 90%;
+}
+
+
+.container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  top: 120%;
+  left: 13%;
+}
+.container .progress{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  color: white;
+  background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+.container .progress h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.5em;
+  z-index: 1;
+  font-weight: 500;
+}
+.container .progress h3 span{
+  font-size: 0.65em;
+  font-weight: 400;
+}
+.container .progress h4{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  font-weight: 500;
+  color: var(--clr);
+}
+.container .progress::before{
+  content: '';
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+  border-radius: 0 100% 100% 0/50%;
+}
+.container .progress::after{
+  content: '';
+  position: absolute;
+  /* ring of circle size */
+  inset: 20px; 
+  border-radius: 50%;
+  background: black;
+}
+.container .progress::before{
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn )));
+}
+
+
+
+.s3{
+    background-color: #E98074;
+    height: 95%;
+    border: 5px solid #EAE7DC;
+    margin-left:5%;
+    width: 90%;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px 15px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(67, 59, 59, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.s3 .column .card .h3{
+  font-size: 90px;
+}
+
+
+
+
+
+
+
+
+.s4{
+    background-color: #C1C8E4;
+    height: 95%;
+    border: 5px solid #EAE7DC;
+    margin-left:5%;
+    width: 90%;
+}
+
+.dwn-btn{
+  margin-left: 20%;
+  margin-top: 50%;
+  background-color: #34495E ;
+  color: rgb(214, 221, 175);
+  padding: 5px 12px;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius:5px;
+}
+.dwn-b  tn:hover {
+  background-color: RoyalBlue;
+}
+
+
+
+
+
+
+footer p{
+  text-align: center;
+  font-size: larger;
+}
